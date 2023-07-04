@@ -23,6 +23,7 @@ app.listen(PORT, () => {
         postDAta({
           ip: response.data.ip,
           date: now.format("YYYY-MM-DD HH:mm"),
+          name: "server 1",
         });
       })
       .catch((error) => {
