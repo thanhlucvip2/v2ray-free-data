@@ -22,7 +22,7 @@ app.listen(PORT, () => {
   let config = {
     method: "get",
     maxBodyLength: Infinity,
-    url: "https://api.my-ip.io/ip.json",
+    url: "https://api.myip.com/",
     headers: {},
   };
 
