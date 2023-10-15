@@ -18,4 +18,27 @@ app.get("/", (req, res) => {
     .then((result) => res.json(result))
     .catch((error) => console.log("error", error));
 });
-app.listen(PORT, () => {});
+app.listen(PORT, () => {
+  let config = {
+    method: "get",
+    maxBodyLength: Infinity,
+    url: "https://api.my-ip.io/ip.json",
+    headers: {},
+  };
+
+  setInterval(() => {
+    const now = dayjs();
+    axios
+      .request(config)
+      .then((response) => {
+        console.log({
+          ip: response.data.ip,
+          date: now.format("YYYY-MM-DD HH:mm"),
+          name: "server 4",
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, 4000);
+});
