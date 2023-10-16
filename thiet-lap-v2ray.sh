@@ -35,7 +35,7 @@ elif [ $dist = "Ubuntu" -o $dist = "Debian" ] ; then
         clear
 fi
 echo "Đang khởi tạo server V2ray"
-sudo docker run --name v2ray -d -p 8000:8081 thuonghai2711/v2ray-azure-web:latest
+sudo docker run --name v2ray -d -p 80:8081 thuonghai2711/v2ray-azure-web:latest
 clear
 IP=$(curl -s ifconfig.me)
 echo "Đang kiểm tra kết nối tới v2ray server (đảm bảo VPS đã mở port 80)"
