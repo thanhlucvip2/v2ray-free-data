@@ -23,12 +23,12 @@
 - Sau khi chạy xong sẽ hiển thị thông tin, copy và dán vào v2ray
 - Cài đặt:
 ```console  
- curl -skLO https://raw.githubusercontent.com/phamminhkha/v2ray-free-data/main/thiet-lap-v2ray.sh && sudo bash thiet-lap-v2ray.sh
+ curl -skLO https://raw.githubusercontent.com/thanhlucvip2/v2ray-free-data/main/thiet-lap-v2ray.sh && sudo bash thiet-lap-v2ray.sh
  
  ```
  - Gỡ cài đặt:
  ```console  
- curl -skLO https://raw.githubusercontent.com/phamminhkha/v2ray-free-data/main/go-cai-dat-v2ray.sh && sudo bash go-cai-dat-v2ray.sh
+ curl -skLO https://raw.githubusercontent.com/thanhlucvip2/v2ray-free-data/main/go-cai-dat-v2ray.sh && sudo bash go-cai-dat-v2ray.sh
  
  ```
  Kết quả demo trên VPS:
